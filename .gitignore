@@ -1,48 +1,24 @@
-# ── Dependencies ─────────────────────────────────────────────────────────────
-node_modules/
-.pnp
-.pnp.js
-
-# ── Build Output ──────────────────────────────────────────────────────────────
-dist/
-dist-ssr/
-build/
-
-# ── Environment Files ─────────────────────────────────────────────────────────
-# No .env needed for this project (all config is in src/data/business.js)
-# But ignore any .env files that may be created accidentally:
-.env
-.env.local
-.env.*.local
-
-# ── Vite Cache ────────────────────────────────────────────────────────────────
-.vite/
-
-# ── Logs ──────────────────────────────────────────────────────────────────────
+# Logs
+logs
 *.log
-logs/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+lerna-debug.log*
 
-# ── OS Files ──────────────────────────────────────────────────────────────────
-.DS_Store
-.DS_Store?
-Thumbs.db
-desktop.ini
+node_modules
+dist
+dist-ssr
+*.local
 
-# ── Editor / IDE ──────────────────────────────────────────────────────────────
+# Editor directories and files
 .vscode/*
 !.vscode/extensions.json
-.idea/
+.idea
+.DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
-*.swp
-
-# ── Misc ──────────────────────────────────────────────────────────────────────
-*.tsbuildinfo
-.cache/
