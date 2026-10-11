@@ -1,0 +1,264 @@
+/* ============================================
+   TRIPS PAGE — Sam Tours and Travels
+   ============================================ */
+
+/* ── Trip filters ── */
+.trips-filter-bar {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+    padding: var(--space-6) 0;
+    border-bottom: 1px solid var(--color-border);
+    margin-bottom: var(--space-10);
+}
+
+/* ── Trips grid ── */
+.trips-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-6);
+}
+
+/* ── Detailed trip card ── */
+.trip-detail-card {
+    border: 1px solid var(--color-border);
+    overflow: hidden;
+    background: var(--color-bg);
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow var(--transition-base);
+}
+
+.trip-detail-card:hover {
+    box-shadow: var(--shadow-lg);
+}
+
+.trip-detail-card__image-wrap {
+    position: relative;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    background: var(--color-bg-subtle);
+}
+
+.trip-detail-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+}
+
+.trip-detail-card:hover .trip-detail-card__image {
+    transform: scale(1.04);
+}
+
+.trip-detail-card__tag {
+    position: absolute;
+    top: var(--space-4);
+    right: var(--space-4);
+    background: rgba(8,8,8,0.75);
+    color: rgba(255,255,255,0.85);
+    font-size: 0.65rem;
+    font-weight: var(--weight-semibold);
+    letter-spacing: var(--tracking-widest);
+    text-transform: uppercase;
+    padding: 4px 10px;
+}
+
+.trip-detail-card__body {
+    padding: var(--space-6);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.trip-detail-card__meta {
+    display: flex;
+    gap: var(--space-4);
+    align-items: center;
+    margin-bottom: var(--space-4);
+}
+
+.trip-meta-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+    font-size: var(--text-xs);
+    color: var(--color-text-muted);
+}
+
+.trip-detail-card__name {
+    font-size: var(--text-xl);
+    font-weight: var(--weight-bold);
+    letter-spacing: -0.02em;
+    margin-bottom: var(--space-3);
+}
+
+.trip-detail-card__desc {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    line-height: var(--leading-relaxed);
+    margin-bottom: var(--space-5);
+    flex: 1;
+}
+
+.trip-detail-card__highlights {
+    margin-bottom: var(--space-5);
+}
+
+.trip-detail-card__highlights-title {
+    font-size: var(--text-xs);
+    font-weight: var(--weight-semibold);
+    letter-spacing: var(--tracking-widest);
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-2);
+}
+
+.trip-highlights-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+}
+
+.trip-highlight-tag {
+    font-size: var(--text-xs);
+    color: var(--color-text-muted);
+    border: 1px solid var(--color-border);
+    padding: 3px 10px;
+    background: var(--color-bg-subtle);
+}
+
+.trip-detail-card__footer {
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--color-border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+}
+
+.trip-price {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+}
+
+/* ── Featured trip (large card) ── */
+.trip-featured-card {
+    border: 1px solid var(--color-border);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 460px;
+    overflow: hidden;
+    background: var(--color-bg);
+    margin-bottom: var(--space-6);
+}
+
+.trip-featured-card__image-col {
+    position: relative;
+    overflow: hidden;
+    background: var(--color-bg-subtle);
+}
+
+.trip-featured-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+}
+
+.trip-featured-card:hover .trip-featured-card__image {
+    transform: scale(1.03);
+}
+
+.trip-featured-card__content {
+    padding: var(--space-12) var(--space-10);
+    border-left: 1px solid var(--color-border);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.trip-featured-card__tag {
+    font-size: var(--text-xs);
+    font-weight: var(--weight-semibold);
+    letter-spacing: var(--tracking-widest);
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-2);
+}
+
+.trip-featured-card__name {
+    font-size: clamp(var(--text-xl), 3vw, var(--text-3xl));
+    font-weight: var(--weight-black);
+    letter-spacing: -0.025em;
+    margin-bottom: var(--space-5);
+}
+
+.trip-featured-card__desc {
+    font-size: var(--text-base);
+    color: var(--color-text-muted);
+    line-height: var(--leading-relaxed);
+    margin-bottom: var(--space-6);
+}
+
+.trip-featured-card__itinerary {
+    margin-bottom: var(--space-6);
+}
+
+.trip-itinerary-title {
+    font-size: var(--text-xs);
+    font-weight: var(--weight-semibold);
+    letter-spacing: var(--tracking-widest);
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-3);
+}
+
+.trip-itinerary-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.trip-itinerary-item {
+    display: flex;
+    gap: var(--space-3);
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+}
+
+.trip-itinerary-item__day {
+    font-weight: var(--weight-semibold);
+    color: var(--color-text);
+    white-space: nowrap;
+    min-width: 60px;
+}
+
+/* ── Itinerary section ── */
+.itinerary-section {
+    border-top: 1px solid var(--color-border);
+    padding-top: var(--space-4);
+}
+
+/* ── Empty state ── */
+.trips-empty {
+    text-align: center;
+    padding: var(--space-20) var(--space-8);
+    border: 1px dashed var(--color-border);
+    color: var(--color-text-muted);
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+    .trips-grid { grid-template-columns: repeat(2, 1fr); }
+    .trip-featured-card { grid-template-columns: 1fr; }
+    .trip-featured-card__content {
+        border-left: none;
+        border-top: 1px solid var(--color-border);
+    }
+}
+
+@media (max-width: 640px) {
+    .trips-grid { grid-template-columns: 1fr; }
+}

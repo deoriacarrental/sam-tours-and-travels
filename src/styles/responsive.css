@@ -1,0 +1,65 @@
+/* ============================================
+   RESPONSIVE UTILITIES — Sam Tours and Travels
+   ============================================ */
+
+/* ── Layout helpers ── */
+.layout {
+    display: grid;
+}
+
+/* ── Hide/show ── */
+@media (max-width: 768px) {
+    .hide-mobile { display: none !important; }
+}
+
+@media (min-width: 769px) {
+    .hide-desktop { display: none !important; }
+}
+
+/* ── Grid responsive ── */
+@media (max-width: 1024px) {
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding-top: var(--space-16);
+        padding-bottom: var(--space-16);
+    }
+
+    .btn {
+        padding: 0.75rem 1.25rem;
+        font-size: var(--text-xs);
+    }
+}
+
+/* ── Touch-friendly ── */
+@media (hover: none) and (pointer: coarse) {
+    .btn {
+        min-height: 48px;
+    }
+
+    .nav__link {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+    }
+}

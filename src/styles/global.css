@@ -1,0 +1,140 @@
+/* ============================================
+   GLOBAL — Sam Tours and Travels
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+body {
+    font-family: var(--font-sans);
+    font-size: var(--text-base);
+    font-weight: var(--weight-regular);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    line-height: var(--leading-relaxed);
+}
+
+/* ── Container ── */
+.container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
+}
+
+/* ── Section padding ── */
+.section {
+    padding-top: var(--space-24);
+    padding-bottom: var(--space-24);
+}
+
+.section--compact {
+    padding-top: var(--space-16);
+    padding-bottom: var(--space-16);
+}
+
+.section--dark {
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-light);
+}
+
+.section--subtle {
+    background-color: var(--color-bg-subtle);
+}
+
+/* ── Divider ── */
+.divider {
+    height: 1px;
+    background-color: var(--color-border);
+    border: none;
+}
+
+.divider--dark {
+    background-color: var(--color-border-dark);
+}
+
+/* ── Eyebrow label ── */
+.eyebrow {
+    display: inline-block;
+    font-size: var(--text-xs);
+    font-weight: var(--weight-semibold);
+    letter-spacing: var(--tracking-widest);
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+}
+
+.eyebrow--light {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* ── Utility ── */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.text-center { text-align: center; }
+.text-left   { text-align: left;   }
+
+.flex        { display: flex; }
+.flex-col    { flex-direction: column; }
+.items-center{ align-items: center; }
+.justify-between { justify-content: space-between; }
+.gap-4       { gap: var(--space-4); }
+.gap-8       { gap: var(--space-8); }
+
+.mt-4        { margin-top: var(--space-4); }
+.mt-8        { margin-top: var(--space-8); }
+.mt-12       { margin-top: var(--space-12); }
+.mb-4        { margin-bottom: var(--space-4); }
+.mb-8        { margin-bottom: var(--space-8); }
+
+/* ── Focus visible ── */
+:focus-visible {
+    outline: 2px solid var(--color-text);
+    outline-offset: 3px;
+}
+
+/* ── Image cover ── */
+.img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* ── Page main offset for sticky header ── */
+.page-main {
+    padding-top: 72px;
+}
+
+/* ── Spin animation (used in loading buttons) ── */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+.spin {
+    animation: spin 1s linear infinite;
+}
+
+/* ── Layout CSS for map section ── */
+.map-section__grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+@media (max-width: 1024px) {
+    .map-section__grid {
+        grid-template-columns: 1fr;
+    }
+}
