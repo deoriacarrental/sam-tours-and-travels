@@ -25,13 +25,13 @@ body {
 
 /* ── Section padding ── */
 .section {
-    padding-top: var(--space-24);
-    padding-bottom: var(--space-24);
+    padding-top: var(--space-32);
+    padding-bottom: var(--space-32);
 }
 
 .section--compact {
-    padding-top: var(--space-16);
-    padding-bottom: var(--space-16);
+    padding-top: var(--space-20);
+    padding-bottom: var(--space-20);
 }
 
 .section--dark {
@@ -114,7 +114,7 @@ body {
 
 /* ── Page main offset for sticky header ── */
 .page-main {
-    padding-top: 72px;
+    padding-top: 80px;
 }
 
 /* ── Spin animation (used in loading buttons) ── */
@@ -125,16 +125,4 @@ body {
 
 .spin {
     animation: spin 1s linear infinite;
-}
-
-/* ── Layout CSS for map section ── */
-.map-section__grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-}
-
-@media (max-width: 1024px) {
-    .map-section__grid {
-        grid-template-columns: 1fr;
-    }
 }

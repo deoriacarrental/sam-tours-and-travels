@@ -92,7 +92,7 @@
 
 /* ── Section Heading ── */
 .section-heading {
-    margin-bottom: var(--space-16);
+    margin-bottom: var(--space-12);
 }
 
 .section-heading--center {
@@ -121,11 +121,11 @@
 }
 
 .section-heading__desc {
-    margin-top: var(--space-4);
+    margin-top: var(--space-5);
     font-size: var(--text-lg);
     color: var(--color-text-muted);
     line-height: var(--leading-relaxed);
-    max-width: 600px;
+    max-width: 640px;
 }
 
 .section-heading--center .section-heading__desc {
@@ -215,19 +215,19 @@
 .grid-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--space-8);
+    gap: var(--space-10);
 }
 
 .grid-3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-8);
+    gap: var(--space-10);
 }
 
 .grid-4 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: var(--space-6);
+    gap: var(--space-8);
 }
 
 /* ── Star Rating ── */

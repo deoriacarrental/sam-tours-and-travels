@@ -73,8 +73,8 @@ export default function Header() {
                         aria-label="Sam Tours and Travels — Home"
                         onClick={close}
                     >
+                        <img width={40} src="/favicon.svg" alt="Sam Tours and Travels logo" />
                         <span className="header__brand-name">Sam Tours &amp; Travels</span>
-                        <span className="header__brand-tagline">Reliable · Comfortable · Trusted</span>
                     </Link>
 
                     {/* Desktop nav */}

@@ -17,7 +17,7 @@
 .trips-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-6);
+    gap: var(--space-8);
 }
 
 /* ── Detailed trip card ── */
@@ -66,7 +66,7 @@
 }
 
 .trip-detail-card__body {
-    padding: var(--space-6);
+    padding: var(--space-8);
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -172,7 +172,7 @@
 }
 
 .trip-featured-card__content {
-    padding: var(--space-12) var(--space-10);
+    padding: var(--space-16) var(--space-12);
     border-left: 1px solid var(--color-border);
     display: flex;
     flex-direction: column;
@@ -259,6 +259,8 @@
     }
 }
 
-@media (max-width: 640px) {
-    .trips-grid { grid-template-columns: 1fr; }
+@media (max-width: 720px) {
+    .trips-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

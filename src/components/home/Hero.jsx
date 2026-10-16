@@ -16,14 +16,6 @@ export default function Hero() {
             <div className="hero__overlay" aria-hidden="true" />
 
             <div className="hero__content container">
-                {/* Service tags */}
-                <div className="hero__service-tags" aria-label="Services offered">
-                    <span className="hero__tag">Car Rentals</span>
-                    <span className="hero__tag">Outstation Trips</span>
-                    <span className="hero__tag">Local Travel</span>
-                    <span className="hero__tag">Group Tours</span>
-                </div>
-
                 {/* Headline */}
                 <h1 className="hero__headline">
                     Your Journey.<br />

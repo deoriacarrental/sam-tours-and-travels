@@ -41,14 +41,14 @@
     width: 100%;
     max-width: var(--max-width);
     margin: 0 auto;
-    padding: var(--space-24) var(--gutter);
-    padding-top: calc(var(--space-24) + 72px);
+    padding: var(--space-32) var(--gutter);
+    padding-top: calc(var(--space-32) + 80px);
 }
 
 .hero__service-tags {
     display: flex;
-    gap: var(--space-3);
-    margin-bottom: var(--space-8);
+    gap: var(--space-4);
+    margin-bottom: var(--space-10);
     flex-wrap: wrap;
 }
 
@@ -91,11 +91,11 @@
 }
 
 .hero__subtext {
-    font-size: var(--text-lg);
+    font-size: var(--text-xl);
     color: rgba(255,255,255,0.55);
-    max-width: 480px;
+    max-width: 520px;
     line-height: var(--leading-relaxed);
-    margin-bottom: var(--space-10);
+    margin-bottom: var(--space-12);
 }
 
 .hero__actions {
@@ -145,7 +145,7 @@
 .booking-form-panel__inner {
     background-color: var(--color-bg);
     border: 1px solid var(--color-border);
-    padding: var(--space-8);
+    padding: var(--space-10) var(--space-12);
 }
 
 .booking-form-panel__title {
@@ -238,9 +238,9 @@
 }
 
 .highlight-item {
-    padding: var(--space-10) var(--space-8);
+    padding: var(--space-12) var(--space-10);
     border-right: 1px solid var(--color-border);
-    border-bottom: 1px solid var(--color-border);
+    border-bottom: none;
 }
 
 .highlight-item__icon {
@@ -271,7 +271,7 @@
     align-items: flex-end;
     justify-content: space-between;
     gap: var(--space-6);
-    margin-bottom: var(--space-12);
+    margin-bottom: var(--space-16);
 }
 
 .vehicle-card {
@@ -318,7 +318,7 @@
 }
 
 .vehicle-card__body {
-    padding: var(--space-6);
+    padding: var(--space-8);
 }
 
 .vehicle-card__category {
@@ -378,7 +378,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0;
-    min-height: 500px;
+    min-height: 580px;
 }
 
 .about-preview__image-col {
@@ -399,7 +399,7 @@
 }
 
 .about-preview__content-col {
-    padding: var(--space-20) var(--space-16);
+    padding: var(--space-32) var(--space-20);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -475,7 +475,7 @@
 }
 
 .trip-card__body {
-    padding: var(--space-5) var(--space-6);
+    padding: var(--space-8);
 }
 
 .trip-card__destination {
@@ -553,7 +553,7 @@
     display: grid;
     grid-template-columns: 48px 1fr;
     gap: var(--space-5);
-    padding: var(--space-6) 0;
+    padding: var(--space-8) 0;
     border-bottom: 1px solid var(--color-border-dark);
     align-items: start;
 }
@@ -595,7 +595,7 @@
 
 .review-card {
     border: 1px solid var(--color-border);
-    padding: var(--space-7);
+    padding: var(--space-10);
     background: var(--color-bg);
 }
 
@@ -677,12 +677,12 @@
 }
 
 .map-section__info {
-    padding: var(--space-12) var(--space-10);
+    padding: var(--space-16) var(--space-12);
     border-right: 1px solid var(--color-border);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: var(--space-6);
+    gap: var(--space-8);
 }
 
 .map-section__detail {
@@ -789,10 +789,10 @@
 }
 
 .final-cta__subtext {
-    font-size: var(--text-lg);
+    font-size: var(--text-xl);
     color: var(--color-text-muted);
-    margin-bottom: var(--space-10);
-    max-width: 480px;
+    margin-bottom: var(--space-12);
+    max-width: 520px;
     margin-left: auto;
     margin-right: auto;
     line-height: var(--leading-relaxed);
@@ -838,12 +838,23 @@
     }
 
     .map-section__grid {
-        grid-template-columns: 1fr;
+        display: block;
     }
 
     .map-section__info {
         border-right: none;
         border-bottom: 1px solid var(--color-border);
+        padding: var(--space-10) var(--gutter);
+        gap: var(--space-6);
+    }
+
+    .map-section__embed {
+        min-height: 340px;
+    }
+
+    .map-placeholder {
+        min-height: 340px;
+        border-left: none;
     }
 }
 
@@ -871,5 +882,24 @@
     .featured-vehicles__header {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .map-section__info {
+        padding: var(--space-8) var(--gutter);
+        gap: var(--space-5);
+    }
+
+    .map-section__embed,
+    .map-placeholder {
+        min-height: 260px;
+    }
+
+    .map-placeholder {
+        border-left: none;
+        border-top: 1px solid var(--color-border);
+    }
+
+    .map-section__grid{
+        display: block !important;
     }
 }
