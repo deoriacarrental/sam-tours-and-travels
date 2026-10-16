@@ -1,44 +1,11 @@
 import { Link } from 'react-router-dom';
 import {
-    Shield, Zap, Heart, Clock, Users, Star,
-    MapPin, CheckCircle,
+    Shield, Heart, Clock, Star, CheckCircle,
 } from 'lucide-react';
 import '../styles/about.css';
 import PageHero from '../components/common/PageHero';
 import SectionHeading from '../components/common/SectionHeading';
-
-const services = [
-    {
-        icon: <MapPin size={24} strokeWidth={1.5} />,
-        title: 'Local City Travel',
-        desc: 'Comfortable and timely rides within the city — for errands, commutes, events, and appointments.',
-    },
-    {
-        icon: <Shield size={24} strokeWidth={1.5} />,
-        title: 'Airport Transfers',
-        desc: 'Stress-free airport pickups and drops with flight tracking and punctual service.',
-    },
-    {
-        icon: <Users size={24} strokeWidth={1.5} />,
-        title: 'Outstation Travel',
-        desc: 'Long-distance journeys to popular destinations with experienced outstation drivers.',
-    },
-    {
-        icon: <Star size={24} strokeWidth={1.5} />,
-        title: 'Tour Packages',
-        desc: 'Thoughtfully planned day trips and multi-day tours to scenic destinations.',
-    },
-    {
-        icon: <Heart size={24} strokeWidth={1.5} />,
-        title: 'Pilgrimages',
-        desc: 'Comfortable, organised travel to religious destinations for individuals and groups.',
-    },
-    {
-        icon: <Zap size={24} strokeWidth={1.5} />,
-        title: 'Corporate Travel',
-        desc: 'Professional, punctual travel solutions for teams, meetings, and conferences.',
-    },
-];
+import { services } from '../data/services';
 
 const pillars = [
     {
@@ -221,9 +188,11 @@ export default function About() {
                         center
                     />
                     <div className="about-services__grid">
-                        {services.map(({ icon, title, desc }) => (
+                        {services.map(({ icon: Icon, title, desc }) => (
                             <div key={title} className="about-service-item">
-                                <div className="about-service-item__icon" aria-hidden="true">{icon}</div>
+                                <div className="about-service-item__icon" aria-hidden="true">
+                                    <Icon size={24} strokeWidth={1.5} />
+                                </div>
                                 <h3 className="about-service-item__title">{title}</h3>
                                 <p className="about-service-item__desc">{desc}</p>
                             </div>

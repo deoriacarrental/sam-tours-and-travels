@@ -8,8 +8,10 @@ import { vehicles } from '../../data/vehicles';
  * FeaturedVehicles.jsx — Home page featured fleet section.
  */
 export default function FeaturedVehicles() {
-    // Show first 3 vehicles as featured
-    const featured = vehicles.slice(0, 3);
+    const featured = [
+        ...vehicles.filter((vehicle) => vehicle.isFeatured),
+        ...vehicles.filter((vehicle) => !vehicle.isFeatured),
+    ].slice(0, 3);
 
     return (
         <section className="section featured-vehicles" aria-label="Featured vehicles">

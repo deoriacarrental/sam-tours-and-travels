@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { Users, Luggage, Wind, ArrowRight } from 'lucide-react';
 import { business } from '../../data/business';
 
@@ -7,7 +6,7 @@ import { business } from '../../data/business';
  * Compact vehicle card for the home page Featured Vehicles section and vehicles grid.
  */
 export default function VehicleCard({ vehicle }) {
-    const { id, name, categoryLabel, image, imageAlt, seats, ac, transmission, pricing } = vehicle;
+    const { name, categoryLabel, image, imageAlt, seats, ac, transmission, pricing } = vehicle;
 
     const whatsappMsg = encodeURIComponent(
         `Hello, I am interested in enquiring about the ${name}. Please share availability and rates.`
@@ -23,8 +22,7 @@ export default function VehicleCard({ vehicle }) {
                     className="vehicle-card__image"
                     loading="lazy"
                     onError={(e) => {
-                        e.currentTarget.src =
-                            'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&q=80';
+                        e.currentTarget.src = '/assets/images/innova.webp';
                     }}
                 />
                 <span className="vehicle-card__badge">{categoryLabel}</span>
@@ -55,7 +53,7 @@ export default function VehicleCard({ vehicle }) {
 
                 <div className="vehicle-card__footer">
                     <span className="vehicle-card__price">
-                        {pricing.type === 'quote' ? 'Request a Quote' : pricing.note}
+                        {pricing.note || (pricing.type === 'quote' ? 'Request a Quote' : '')}
                     </span>
                     <a
                         href={`https://wa.me/${whatsappNumber}?text=${whatsappMsg}`}
