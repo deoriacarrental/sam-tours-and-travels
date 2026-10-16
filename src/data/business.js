@@ -12,20 +12,21 @@ export const business = {
         'Reliable car rentals, comfortable journeys, and thoughtfully planned trips — all in one place.',
 
     // ── Contact [CONFIGURE] ──────────────────────────────────────────
-    phone: '+91 98765 43210',          // [CONFIGURE] real phone number
-    phoneRaw: '919876543210',          // [CONFIGURE] for WhatsApp link (no + or spaces)
-    email: 'info@samtoursandtravels.com', // [CONFIGURE] real email
-    whatsapp: '919876543210',          // [CONFIGURE] WhatsApp number
+    phone: '+91 63941 85480',
+    phoneRaw: '916394185480',          // For telephone and WhatsApp links (no + or spaces)
+    email: 'samtourtravel5253@gmail.com',
+    whatsapp: '916394185480',          // WhatsApp number
 
-    // ── Address [CONFIGURE] ──────────────────────────────────────────
+    // ── Address ─────────────────────────────────────────────────────
     address: {
-        line1: '123, Main Road',       // [CONFIGURE]
-        line2: 'Near City Bus Stand',  // [CONFIGURE]
-        city: 'Your City',             // [CONFIGURE]
-        state: 'Your State',           // [CONFIGURE]
-        pincode: '000000',             // [CONFIGURE]
+        line1: 'Deoria Baraon Rd',
+        line2: 'Ram Naath Nagar',
+        city: 'Deoria',
+        state: 'Uttar Pradesh',
+        pincode: '274001',
         country: 'India',
-        full: '123, Main Road, Near City Bus Stand, Your City, Your State — 000000', // [CONFIGURE]
+        plusCode: 'FQV9+CJ8',
+        full: 'Deoria Baraon Rd, Ram Naath Nagar, Deoria, Uttar Pradesh 274001 (FQV9+CJ8)',
     },
 
     // ── Operating Hours [CONFIGURE] ──────────────────────────────────
@@ -42,7 +43,7 @@ export const business = {
         youtube:   '',   // [CONFIGURE]
     },
 
-    // ── Google Maps [CONFIGURE] ──────────────────────────────────────
+    // ── Google Maps ─────────────────────────────────────────────────
     // No API key required — use a free iframe embed URL.
     //
     // How to get your iframe embed URL:
@@ -51,10 +52,10 @@ export const business = {
     //   3. Paste only the src="..." URL below (without quotes)
     //
     google: {
-        mapsUrl:    '',  // [CONFIGURE] Direct Google Maps link (for "Get Directions" button)
-        reviewsUrl: '',  // [CONFIGURE] Google Maps reviews link
+        mapsUrl:    'https://www.google.com/maps/search/?api=1&query=26.493543576899555,83.76650617542505',
+        reviewsUrl: '',
         // Paste the iframe src URL from Google Maps → Share → Embed a map
-        iframeUrl:  '',  // [CONFIGURE] e.g. 'https://www.google.com/maps/embed?pb=!1m18...'
+        iframeUrl:  'https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3570.826097520513!2d83.76650617542505!3d26.493543576899555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDI5JzM2LjgiTiA4M8KwNDYnMDguNyJF!5e0!3m2!1sen!2sin!4v1792165518877!5m2!1sen!2sin',
     },
 
     // ── Services (for structured data) ──────────────────────────────

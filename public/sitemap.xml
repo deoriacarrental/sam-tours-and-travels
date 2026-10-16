@@ -3,48 +3,48 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
-        <loc>https://samtoursandtravels.com/</loc>
+        <loc>https://samtoursandtravels.deoriacarrental.workers.dev/</loc>
         <image:image>
-            <image:loc>https://samtoursandtravels.com/images/hero_banner.jpg</image:loc>
+            <image:loc>https://samtoursandtravels.deoriacarrental.workers.dev/images/hero_banner.jpg</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://samtoursandtravels.com/images/road_experience.jpg</image:loc>
-        </image:image>
-    </url>
-    <url>
-        <loc>https://samtoursandtravels.com/about</loc>
-        <image:image>
-            <image:loc>https://samtoursandtravels.com/images/about_hero.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://samtoursandtravels.com/images/trips_hero.jpg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://samtoursandtravels.com/images/hero_banner.jpg</image:loc>
+            <image:loc>https://samtoursandtravels.deoriacarrental.workers.dev/images/road_experience.jpg</image:loc>
         </image:image>
     </url>
     <url>
-        <loc>https://samtoursandtravels.com/vehicles</loc>
+        <loc>https://samtoursandtravels.deoriacarrental.workers.dev/about</loc>
         <image:image>
-            <image:loc>https://samtoursandtravels.com/images/vehicle_sedan.jpg</image:loc>
+            <image:loc>https://samtoursandtravels.deoriacarrental.workers.dev/images/about_hero.jpg</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://samtoursandtravels.com/images/vehicle_suv.jpg</image:loc>
+            <image:loc>https://samtoursandtravels.deoriacarrental.workers.dev/images/trips_hero.jpg</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://samtoursandtravels.com/images/hero_banner.jpg</image:loc>
-        </image:image>
-    </url>
-    <url>
-        <loc>https://samtoursandtravels.com/trips</loc>
-        <image:image>
-            <image:loc>https://samtoursandtravels.com/images/trips_hero.jpg</image:loc>
+            <image:loc>https://samtoursandtravels.deoriacarrental.workers.dev/images/hero_banner.jpg</image:loc>
         </image:image>
     </url>
     <url>
-        <loc>https://samtoursandtravels.com/contact</loc>
+        <loc>https://samtoursandtravels.deoriacarrental.workers.dev/vehicles</loc>
         <image:image>
-            <image:loc>https://samtoursandtravels.com/images/road_experience.jpg</image:loc>
+            <image:loc>https://samtoursandtravels.deoriacarrental.workers.dev/images/vehicle_sedan.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://samtoursandtravels.deoriacarrental.workers.dev/images/vehicle_suv.jpg</image:loc>
+        </image:image>
+        <image:image>
+            <image:loc>https://samtoursandtravels.deoriacarrental.workers.dev/images/hero_banner.jpg</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://samtoursandtravels.deoriacarrental.workers.dev/trips</loc>
+        <image:image>
+            <image:loc>https://samtoursandtravels.deoriacarrental.workers.dev/images/trips_hero.jpg</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://samtoursandtravels.deoriacarrental.workers.dev/contact</loc>
+        <image:image>
+            <image:loc>https://samtoursandtravels.deoriacarrental.workers.dev/images/road_experience.jpg</image:loc>
         </image:image>
     </url>
 </urlset>

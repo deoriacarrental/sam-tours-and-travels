@@ -18,7 +18,7 @@ function ScrollToTop() {
     return null;
 }
 
-const siteUrl = 'https://samtoursandtravels.com';
+const siteUrl = 'https://samtoursandtravels.deoriacarrental.workers.dev';
 const defaultImage = `${siteUrl}/images/hero_banner.jpg`;
 
 const pageMeta = {
